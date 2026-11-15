@@ -24,7 +24,7 @@ html {
 /* Variables (example: see declaration for "a" below) */
 
 :root {
-  --link-color: #00B7FF;
+  --link-color: #eeff00;
   --background-color: #efefef;
   --border-color: #cdcdcd;
   --gray-color: #666;
@@ -47,7 +47,26 @@ a {
 /* ### TODO ### Styles for other HTML elements */
 
 /* ... your code here ... */
+input {
+  padding: 0.5rem;
+  width: 100%;
+}
 
+fieldset {
+  padding: 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #9755e2;
+  border: 1px;
+  padding: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+}
 
 /* Grid styles (no changes required) */
 
@@ -110,28 +129,87 @@ a {
 /* ### TODO ### Styles for Header Component */
 
 /* ... your code here ... */
+.header {
+  background-color: #a574dd;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__image {
+  width: 50px;
+}
 
 
 /* ### TODO ### Styles for Main Component */
 
 /* ... your code here ... */
+.main {
+  padding: 1rem;
+}
 
 
 /* ### TODO ### Styles for Tagging component */
 
 /* ... your code here ... */
+.tagging label,
+.tagging input,
+.tagging button {
+  display: block;
+  margin-bottom: 0.5rem;
+}
 
 
 /* ### TODO ### Styles for Discovery component */
 
 /* ... your code here ... */
+.discovery input {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.discovery__results {
+  list-style: none;
+}
+
+.discovery__results li {
+  background-color: #9755e2;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #eeff00;
+}
+
+.discovery__map img {
+  max-width: 100%;
+  display: block;
+}
+
+#discoveryFilterForm {
+  margin-bottom: 1rem;
+}
 
 
 /* ### TODO ### Styles for Footer Component */
 
 /* ... your code here ... */
+.footer {
+  background-color: #a574dd;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+}
 
 
 /* ### TODO ### Media Queries */
 
 /* ... your code here ... */
+@media (max-width: 850px) {
+  .row {
+    flex-direction: column;
+  }
+
+  [class*="col-"] {
+    width: 100%;
+  }
+}
