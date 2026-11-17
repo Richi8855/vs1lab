@@ -47,6 +47,29 @@ a {
 /* ### TODO ### Styles for other HTML elements */
 
 /* ... your code here ... */
+input {
+
+  width: 40%;
+  padding: 12px;
+  font-size: 16px;
+
+}
+
+.discovery__results {
+
+  list-style: none;
+  padding: 0;
+
+}
+
+.discovery__results li {
+
+  background-color: lightblue;
+  padding: 16px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+}
 
 
 /* Grid styles (no changes required) */
@@ -108,30 +131,96 @@ a {
 
 
 /* ### TODO ### Styles for Header Component */
+.header {
 
-/* ... your code here ... */
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  background-color: rgb(122, 122, 173);
+  color: white;
+  padding: 50px;
 
+}
+
+.header__image {
+
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+
+}
+
+.header__title {
+
+  text-align: center;
+  font-size: 50px;
+
+}
+
+.header__navigation {
+
+  justify-self: end; 
+
+}
 
 /* ### TODO ### Styles for Main Component */
+.main {
 
-/* ... your code here ... */
+  display: flex;
+  gap: 20px;
+  padding: 30px;
 
+}
 
 /* ### TODO ### Styles for Tagging component */
+.tagging {
 
-/* ... your code here ... */
+  background-color: gray;
+  padding: 20px;
+  border: 1px solid var(--border-color);
 
+}
+
+.tagging fieldset {
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
 
 /* ### TODO ### Styles for Discovery component */
+.discovery {
 
-/* ... your code here ... */
+  background-color: gray;
+  padding: 20px;
+  border: 1px solid var(--border-color);
 
+}
 
 /* ### TODO ### Styles for Footer Component */
+.footer {
 
-/* ... your code here ... */
+  background-color: rgb(122, 122, 173);
+  color: white;
+  padding: 105px;
+  text-align: center;
 
+}
 
 /* ### TODO ### Media Queries */
+.discovery__wrapper {
 
-/* ... your code here ... */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+}
+
+@media (max-width: 700px) {
+
+   .discovery__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+}
